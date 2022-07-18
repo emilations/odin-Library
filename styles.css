@@ -1,4 +1,65 @@
-* {
+*, h1, h3{
   padding: 0;
   margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  padding: 1.5rem 50px 1.5rem 50px;
+  background-color: #FFEDDA;
+  text-align: center;
+  gap: 50px;
+  color: rgb(50, 50, 50);
+  box-shadow: 0px 0px 8px black;
+}
+
+.main {
+  padding: 50px;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+th, td {
+  text-align: start;
+  padding: 5px 20px 5px 5px;
+  border: 1px solid;
+}
+
+.footer {
+  background-color: silver;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0px 0px 8px black;
+}
+
+/* 
+#C89E7F
+RGB (200,158,127)
+
+#FFEDDA
+RGB (255,237,218)
+
+#DCA99B
+RGB (220,169,155)
+
+#D07B54
+RGB (208,123,84)
+
+#B96453
+RGB (185,100,83)
+*/

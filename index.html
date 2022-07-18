@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="header">
-    <div class="title">
-      <h1>The book library</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Your book library</h1>
+        <h4>An online metadata database for all your books</h4>
+      </div>
+      <div class="main">
+        <div class="button"><button>New book</button></div>
+        <div class="table-container">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Page</th>
+                <th>Read</th>
+                <th>Delete</th>
+              </tr>
+              <tr>
+                <td>Weather Fying</td>
+                <td>Robert N. Buck</td>
+                <td>417</td>
+                <td>Not read yet</td>
+                <td>Delete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="footer">
+        <p>emilations - The Odin Project - github handle</p>
+      </div>
     </div>
-    <div class="hero">
-      <h3>This is an online metadata databse of all the books</h3>
-    </div>
-  </div>
-  <div class="main">
-    <button>New book</button>
-  </div>  
-  <div class="footer">emilations - The Odin Project - github handle</div>
-</body>
+  </body>
 </html>
