@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-all">
+
       <div class="header">
         <h1>Your book library</h1>
-        <h4>An online metadata database for all your books</h4>
+        <h5>An online metadata database for all your books</h5>
       </div>
+
       <div class="main">
-        <div class="button"><button>New book</button></div>
+        <!-- Button trigger modal -->
+        <div class="button">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button>
+        </div>
         <div class="table-container">
           <table class="table">
-            <tbody>
+            <thead>
               <tr>
                 <th>Title</th>
                 <th>Author</th>
@@ -25,20 +35,57 @@
                 <th>Read</th>
                 <th>Delete</th>
               </tr>
-              <tr>
-                <td>Weather Fying</td>
-                <td>Robert N. Buck</td>
-                <td>417</td>
-                <td>Not read yet</td>
-                <td>Delete</td>
-              </tr>
+            </thead>
+            <tbody>
+              <td>Title</td>
+              <td>Author</td>
+              <td>Page</td>
+              <td>Read</td>
+              <td>Delete</td>
             </tbody>
           </table>
         </div>
       </div>
+
       <div class="footer">
         <p>emilations - The Odin Project - github handle</p>
+        <p>Bootsrap v5.2</p>
       </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Insert new book info</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="modal-container">
+            <form class="form-inputs" action="">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="">
+                <label for="pages">Pages</label>
+                <input type="number" name="pages" id="">
+                <input type="radio" id="html" name="read" value="Read">
+                <label for="html">Read</label>
+                <input type="radio" id="css" name="read" value="Not read yet">
+                <label for="css">Not read yet</label>
+            </form>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary add-button">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     </div>
   </body>
 </html>
