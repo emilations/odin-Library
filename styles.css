@@ -55,6 +55,10 @@ th, td {
   gap: 10px;
 }
 
+.button--delete {
+  background-color: red;
+}
+
 /* 
 #C89E7F
 RGB (200,158,127)
