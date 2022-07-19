@@ -19,37 +19,31 @@
       </div>
 
       <div class="main">
-        <!-- Button trigger modal -->
-        <div class="button">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Insert new book info
-          </button>
-        </div>
         <div class="table-container">
-          <table class="table">
+          <table>
             <thead>
               <tr>
                 <th>Title</th>
                 <th>Author</th>
                 <th>Page</th>
                 <th>Read</th>
-                <th>Delete</th>
+                <th></th>
               </tr>
             </thead>
-            <tbody>
-              <td>Title</td>
-              <td>Author</td>
-              <td>Page</td>
-              <td>Read</td>
-              <td>Delete</td>
-            </tbody>
+            <tbody></tbody>
           </table>
+        </div>
+        <!-- Button trigger modal -->
+        <div id="modal-trigger">
+          <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Insert new book info
+          </button>
         </div>
       </div>
 
       <div class="footer">
-        <p>emilations - The Odin Project - github handle</p>
-        <p>Bootsrap v5.2</p>
+        <p>The Odin Project  - Bootsrap v5.2</p>
+        <p>By Emilations - <a href="https://github.com/emilations/odin-Library">github repo</a></p>
       </div>
     </div>
 
@@ -80,8 +74,9 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary add-button">Add</button>
+            <p class="note">no form valdiation*</p>
+            <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="button add-button" data-bs-dismiss="modal">Add</button>
           </div>
         </div>
       </div>

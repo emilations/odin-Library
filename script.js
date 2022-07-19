@@ -27,8 +27,8 @@ class Book {
 updateTable()
 
 // Add listener on Add book button in the modal
-let addButton = document.querySelector(".btn.btn-primary.add-button");
-addButton.addEventListener("click", addBookToLibrary)
+let addButton = document.querySelector(".add-button");
+addButton.addEventListener("click", addBookToLibrary);
 
 //Add listenner on Delete book button in the table 
 
@@ -72,18 +72,17 @@ function updateTable() {
     read.innerText = myLibrary[index].read;
     let btn = document.createElement("button");
     btn.innerText = "Delete";
-    btn.classList.add("button--delete");
+    btn.classList.add("button", "button--delete");
     btn.dataset.index = index;
     deleteButton.appendChild(btn);
   }
   let old_tbody = document.querySelector("tbody");
-  old_tbody.parentNode.replaceChild(tableData, old_tbody)
+  old_tbody.parentNode.replaceChild(tableData, old_tbody);
   let deleteButtons = document.querySelectorAll(".button--delete");
-  deleteButtons.forEach(button => button.addEventListener("click", deleteBookEntry))
-  console.log(deleteButtons)
+  deleteButtons.forEach(button => button.addEventListener("click", deleteBookEntry));
 }
 
 function deleteBookEntry(e) {
-  myLibrary.splice(e.target.dataset.index, 1)
-  updateTable()
+  myLibrary.splice(e.target.dataset.index, 1);
+  updateTable();
 }

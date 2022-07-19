@@ -1,4 +1,6 @@
-*, h1, h3{
+*,
+h1,
+h3 {
   padding: 0;
   margin: 0;
 }
@@ -12,7 +14,7 @@
 
 .header {
   padding: 1.5rem 50px 1.5rem 50px;
-  background-color: #FFEDDA;
+  background-color: #ffedda;
   text-align: center;
   color: rgb(50, 50, 50);
   box-shadow: 0px 0px 8px black;
@@ -29,19 +31,26 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-bottom: 0.7rem;
 }
 
-th, td {
+th,
+td {
   text-align: start;
   padding: 5px 20px 5px 5px;
-  border: 1px solid;
 }
 
-.footer {
-  background-color: silver;
-  text-align: center;
-  padding: 1rem;
-  box-shadow: 0px 0px 8px black;
+td {
+  border-top: 1px solid black;
+  padding-bottom: 1rem;
+}
+
+tr td:last-child {
+  padding-right: 0;
+}
+
+#modal-trigger {
+  text-align: end;
 }
 
 .modal-container {
@@ -51,27 +60,60 @@ th, td {
 
 .form-inputs {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 5fr;
   gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.form-inputs input {
+  width: 100%;
+}
+
+
+.button {
+  background-color: antiquewhite;
+  padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(46, 46, 46);
+  border: 0px;
+}
+
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0px 0px 0px 0px rgb(99, 99, 99);
+}
+
+.button:hover {
+  outline: grey solid 1px;
 }
 
 .button--delete {
-  background-color: red;
+  background-color: brown;
+  color: white;
 }
 
-/* 
-#C89E7F
-RGB (200,158,127)
+.footer {
+  background-color: silver;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0px 0px 8px black;
+}
 
-#FFEDDA
-RGB (255,237,218)
+.footer p {
+  padding: 0;
+  margin: 0;
+}
 
-#DCA99B
-RGB (220,169,155)
+a {
+  text-decoration: underline;
+  color: black;
+}
 
-#D07B54
-RGB (208,123,84)
+a:hover {
+ color: rgb(97, 97, 97);
+}
 
-#B96453
-RGB (185,100,83)
-*/
+.note {
+  font-size: smaller;
+}
